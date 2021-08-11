@@ -1,0 +1,14 @@
+{
+  "dockerImageBuilder": "ritclizup/rit-go-builder",
+  "inputs": [
+    {
+      "label": "Type the civilization you want from AoE2: ",
+      "name": "rit_input_text",
+      "required": true,
+      "tutorial": "Britons, Celts",
+      "type": "text"
+    }
+  ],
+  "template": "go",
+  "templateRelease:": "2.16.2"
+}
