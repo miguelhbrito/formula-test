@@ -38,6 +38,8 @@ func (f Formula) Run(writer io.Writer) {
 
 	result += color.FgBlue.Render(fmt.Sprintf("The full informations is listed bellow:\n%v", f.FullInformation))
 
+	result += fmt.Sprintf("::output key=%s\n", f.Name)
+
 	if _, err := fmt.Fprintf(writer, result); err != nil {
 		panic(err)
 	}
